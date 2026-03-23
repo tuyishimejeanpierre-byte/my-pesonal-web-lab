@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 15px 0;
+}
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navdiv h2 {
+    font-size: 22px;
+}
+.navdiv p a button {
+    color: #851467;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #0d1b2a;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.navdiv p a button:hover {
+    color: #00b4d8;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #00b4d8;
+}
+
+
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.sec1 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #444;
+}
+
+
+#skills {
+    padding: 60px 20px;
+    background-color: #eaf0f6;
+}
+
+.sec2 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project1 {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project1:hover {
+    transform: translateY(-5px);
+}
+
+
+.project1 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.project1 h3 {
+    margin: 15px 0 10px;
+}
+
+.project1 p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d1b2a;
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .navdiv {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
